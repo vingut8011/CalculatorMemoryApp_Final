@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "CalculatorMemoryApp_Final/1.0.0": {
+        "runtime": {
+          "CalculatorMemoryApp_Final.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CalculatorMemoryApp_Final/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

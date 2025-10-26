@@ -1,0 +1,14 @@
+C:\Users\iaasi\Documents\CalculatorMemoryApp_Final\obj\Debug\net9.0\CalculatorMemoryApp_Final.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\iaasi\Documents\CalculatorMemoryApp_Final\obj\Debug\net9.0\CalculatorMemoryApp_Final.AssemblyInfoInputs.cache
+C:\Users\iaasi\Documents\CalculatorMemoryApp_Final\obj\Debug\net9.0\CalculatorMemoryApp_Final.AssemblyInfo.cs
+C:\Users\iaasi\Documents\CalculatorMemoryApp_Final\obj\Debug\net9.0\CalculatorMemoryApp_Final.csproj.CoreCompileInputs.cache
+C:\Users\iaasi\Documents\CalculatorMemoryApp_Final\bin\Debug\net9.0\CalculatorMemoryApp_Final.exe
+C:\Users\iaasi\Documents\CalculatorMemoryApp_Final\bin\Debug\net9.0\CalculatorMemoryApp_Final.deps.json
+C:\Users\iaasi\Documents\CalculatorMemoryApp_Final\bin\Debug\net9.0\CalculatorMemoryApp_Final.runtimeconfig.json
+C:\Users\iaasi\Documents\CalculatorMemoryApp_Final\bin\Debug\net9.0\CalculatorMemoryApp_Final.dll
+C:\Users\iaasi\Documents\CalculatorMemoryApp_Final\bin\Debug\net9.0\CalculatorMemoryApp_Final.pdb
+C:\Users\iaasi\Documents\CalculatorMemoryApp_Final\obj\Debug\net9.0\CalculatorMemoryApp_Final.dll
+C:\Users\iaasi\Documents\CalculatorMemoryApp_Final\obj\Debug\net9.0\refint\CalculatorMemoryApp_Final.dll
+C:\Users\iaasi\Documents\CalculatorMemoryApp_Final\obj\Debug\net9.0\CalculatorMemoryApp_Final.pdb
+C:\Users\iaasi\Documents\CalculatorMemoryApp_Final\obj\Debug\net9.0\CalculatorMemoryApp_Final.genruntimeconfig.cache
+C:\Users\iaasi\Documents\CalculatorMemoryApp_Final\obj\Debug\net9.0\ref\CalculatorMemoryApp_Final.dll

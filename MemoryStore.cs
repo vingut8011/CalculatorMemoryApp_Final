@@ -1,46 +1,36 @@
-// Author: Vincent Y. Gutierrez
-// Date: 2025-10-26
-// Assignment: SDC220 Project - Phase #3 (Arrays/Lists "Memory")
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
 namespace CalculatorMemoryApp_Final
 {
     public class MemoryStore
     {
-        private const int MaxSize = 10;
-        private int? _singleValue;
-        private List<int> _values = new List<int>();
+        private int? singleValue = null;
+        private List<int> values = new List<int>();
 
-        // Single value memory
-        public void StoreSingle(int value) => _singleValue = value;
-        public int? RetrieveSingle() => _singleValue;
-        public void ClearSingle() => _singleValue = null;
-        public void ReplaceSingle(int value) => _singleValue = value;
+        // === Single Value Functions ===
+        public void StoreSingle(int value) => singleValue = value;
+        public int? RetrieveSingle() => singleValue;
+        public void ClearSingle() => singleValue = null;
+        public void ReplaceSingle(int value) => singleValue = value;
 
-        // Collection memory
+        // === Collection Functions ===
         public bool AddValue(int value)
         {
-            if (_values.Count >= MaxSize) return false;
-            _values.Add(value);
+            if (values.Count >= 10) return false;
+            values.Add(value);
             return true;
         }
 
-        public bool RemoveValue(int value) => _values.Remove(value);
-
-        public int Count() => _values.Count;
-        public IEnumerable<int> GetValues() => _values;
-        public void ClearAll() => _values.Clear();
-        public int Sum() => _values.Sum();
-        public double Average() => _values.Count > 0 ? _values.Average() : 0;
-
+        public void RemoveValue(int value) => values.Remove(value);
+        public int Count() => values.Count;
+        public int Sum() => values.Sum();
+        public double Average() => values.Average();
         public int? FirstMinusLast()
         {
-            if (_values.Count < 2) return null;
-            return _values[0] - _values[_values.Count - 1];
+            if (values.Count < 2) return null;
+            return values.First() - values.Last();
         }
+        public void ClearAll() => values.Clear();
+        public List<int> GetValues() => values;
     }
 }
+
 

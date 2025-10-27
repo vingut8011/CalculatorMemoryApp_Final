@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CalculatorMemoryApp_Final")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f8136b05230d4a1fd4eb0d2d3d46058733e724b")]
 [assembly: System.Reflection.AssemblyProductAttribute("CalculatorMemoryApp_Final")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CalculatorMemoryApp_Final")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,8 +1,4 @@
-﻿// Author: Vincent Y. Gutierrez
-// Project Week 3 - Calculator Memory Functions
-
-using System;
-using CalculatorMemoryApp_Final;
+﻿using System;
 
 namespace CalculatorMemoryApp_Final
 {
@@ -22,6 +18,7 @@ namespace CalculatorMemoryApp_Final
                 Console.WriteLine("[1] Single Memory Value");
                 Console.WriteLine("[2] Collection of up to 10 Values");
                 Console.WriteLine("[Q] Quit");
+
                 Console.Write("Enter choice: ");
                 string choice = Console.ReadLine();
 
@@ -30,14 +27,14 @@ namespace CalculatorMemoryApp_Final
                     case "1": SingleValueMenu(); break;
                     case "2": CollectionMenu(); break;
                     case "Q": running = false; break;
-                    default: Console.WriteLine("Invalid option."); break;
+                    default: Console.WriteLine("Invalid option. Try again."); break;
                 }
             }
 
             Console.WriteLine("\nThank you for using the app!");
         }
 
-        // Single Value Menu
+        // ===== SINGLE VALUE MENU =====
         static void SingleValueMenu()
         {
             bool back = false;
@@ -74,11 +71,12 @@ namespace CalculatorMemoryApp_Final
                         break;
 
                     case "B": back = true; break;
+                    default: Console.WriteLine("Invalid option. Try again."); break;
                 }
             }
         }
 
-        // Collection Menu
+        // ===== COLLECTION MENU =====
         static void CollectionMenu()
         {
             bool back = false;
@@ -121,11 +119,15 @@ namespace CalculatorMemoryApp_Final
                         break;
 
                     case "6":
-                        Console.WriteLine("Average: " + memory.Average());
+                        if (memory.Count() == 0)
+                            Console.WriteLine("Average: 0 (no values)");
+                        else
+                            Console.WriteLine("Average: " + memory.Average());
                         break;
 
                     case "7":
-                        Console.WriteLine("Difference: " + memory.FirstMinusLast());
+                        var diff = memory.FirstMinusLast();
+                        Console.WriteLine(diff == null ? "Need at least two values." : "Difference: " + diff);
                         break;
 
                     case "8":
@@ -133,19 +135,28 @@ namespace CalculatorMemoryApp_Final
                         Console.WriteLine("All cleared.");
                         break;
 
-                    case "B":
-                        back = true; break;
+                    case "B": back = true; break;
+                    default: Console.WriteLine("Invalid option. Try again."); break;
                 }
             }
         }
 
+        // SAFE INPUT FUNCTION
         static int GetInt(string message)
         {
-            Console.Write(message);
-            return int.Parse(Console.ReadLine());
+            while (true)
+            {
+                Console.Write(message);
+                var raw = Console.ReadLine();
+                if (int.TryParse(raw, out int value))
+                    return value;
+
+                Console.WriteLine("Please enter a valid whole number.");
+            }
         }
     }
 }
+
 
     
 
